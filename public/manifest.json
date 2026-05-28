@@ -1,0 +1,25 @@
+{
+  "name": "Al-Ma'tsurat — Dzikir Pagi & Petang",
+  "short_name": "Al-Ma'tsurat",
+  "description": "Morning & Evening Dhikr from Hasan Al-Banna's Al-Ma'thurat collection.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fdf6e3",
+  "theme_color": "#1a472a",
+  "icons": [
+    {
+      "src": "/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
