@@ -1,0 +1,7 @@
+# Al-Ma'tsurat
+
+> Morning & Evening Dhikr (Islamic remembrance) from Imam Hasan Al-Banna's Al-Ma'thurat collection. Bilingual Indonesian/English, installable PWA with offline support and a tap-to-count repeat tracker.
+
+## Pages
+
+- [Home](/): Morning (Pagi) and Evening (Petang) dhikr sessions with Arabic text, Indonesian and English translations, and per-dhikr counters that reset daily.

@@ -82,6 +82,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "Al-Ma'tsurat — Morning & Evening Dhikr" },
       { property: "og:description", content: "Hasan Al-Banna's Al-Ma'thurat — bilingual, beautiful, installable PWA." },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "/" },
+      { property: "og:site_name", content: "Al-Ma'tsurat" },
       { name: "twitter:card", content: "summary" },
     ],
     links: [
@@ -90,7 +92,27 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "icon", href: "/icon-192.svg", type: "image/svg+xml" },
       { rel: "apple-touch-icon", href: "/icon-192.svg" },
     ],
-
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "Al-Ma'tsurat",
+          description:
+            "Morning & Evening Dhikr from Imam Hasan Al-Banna's Al-Ma'thurat collection. Bilingual Indonesian/English, installable PWA.",
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Al-Ma'tsurat",
+          description: "Publisher of the Al-Ma'tsurat bilingual dhikr PWA.",
+        }),
+      },
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,

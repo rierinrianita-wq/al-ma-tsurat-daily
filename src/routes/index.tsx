@@ -13,21 +13,8 @@ import { tr, type Lang } from "@/lib/i18n";
 
 export const Route = createFileRoute("/")({
   head: () => ({
-    meta: [
-      { title: "Al-Ma'tsurat — Dzikir Pagi & Petang" },
-      {
-        name: "description",
-        content:
-          "Aplikasi dzikir pagi dan petang Al-Ma'tsurat dari Imam Hasan Al-Banna. Bilingual ID/EN, offline-ready PWA.",
-      },
-      { name: "theme-color", content: "#1a472a" },
-      { property: "og:title", content: "Al-Ma'tsurat — Morning & Evening Dhikr" },
-      {
-        property: "og:description",
-        content: "Hasan Al-Banna's Al-Ma'thurat — bilingual, beautifully designed, installable PWA.",
-      },
-    ],
     links: [
+      { rel: "canonical", href: "/" },
       { rel: "manifest", href: "/manifest.json" },
       { rel: "apple-touch-icon", href: "/icon-192.svg" },
     ],
@@ -81,9 +68,9 @@ function Index() {
         <div className="mx-auto max-w-2xl px-4 py-3 flex items-center justify-between">
           <div>
             <h1 className="font-display text-xl font-bold leading-none text-primary">
-              {tr("appName", lang)}
+              {tr("appName", lang)} <span className="font-normal text-muted-foreground">— {tr("subtitle", lang)}</span>
             </h1>
-            <p className="text-[11px] mt-1 text-muted-foreground">{tr("subtitle", lang)}</p>
+
           </div>
           <div className="flex items-center gap-2">
             <ThemeToggle />
