@@ -142,6 +142,12 @@ function Index() {
             );
           })}
         </div>
+
+        <footer className="mt-10 pt-6 border-t border-border/60 pb-4 text-center">
+          <p className="text-xs text-muted-foreground">
+            Al-Ma'tsurat v1.0.0 — PT Sister Devop Fii Sabilillah — {tr("aboutDesc", lang)}
+          </p>
+        </footer>
       </main>
 
       <DonateSection lang={lang} />

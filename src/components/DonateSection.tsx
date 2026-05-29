@@ -3,7 +3,7 @@ import type { Lang } from "@/lib/i18n";
 import { tr } from "@/lib/i18n";
 import { Coffee, X, Heart } from "lucide-react";
 
-const SAWERIA_URL = "https://saweria.co/almatsuratdev";
+const SAWERIA_URL = "https://saweria.co/sisterdevop";
 
 export function DonateSection({ lang }: { lang: Lang }) {
   const [open, setOpen] = useState(false);
@@ -12,10 +12,10 @@ export function DonateSection({ lang }: { lang: Lang }) {
       <button
         onClick={() => setOpen(true)}
         className="fixed bottom-5 right-5 z-40 inline-flex items-center gap-2 rounded-full bg-accent px-4 py-3 text-accent-foreground font-semibold shadow-elegant hover:scale-105 transition-transform"
-        aria-label={tr("donateTitle", lang)}
+        aria-label={tr("donateBtn", lang)}
       >
         <Coffee className="h-4 w-4" />
-        <span className="hidden sm:inline text-sm">{tr("donateTitle", lang)}</span>
+        <span className="hidden sm:inline text-sm">{tr("donateBtn", lang)}</span>
       </button>
 
       {open && (
@@ -51,7 +51,7 @@ export function DonateSection({ lang }: { lang: Lang }) {
                 className="flex w-full items-center justify-center gap-2 rounded-xl bg-[#F9A825] text-[#1a1a2e] py-3 font-display font-semibold hover:opacity-95 transition-opacity"
               >
                 <Heart className="h-5 w-5" />
-                Saweria
+                {tr("donateBtn", lang)}
               </a>
             </div>
           </div>

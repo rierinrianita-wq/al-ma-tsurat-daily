@@ -3,9 +3,10 @@ import type { Lang } from "@/lib/i18n";
 import { tr } from "@/lib/i18n";
 import { Info, X, Mail, User, Code as Code2 } from "lucide-react";
 
-const DEV_NAME = "Al-Ma'tsurat Dev";
-const DEV_EMAIL = "almatsuratdev@gmail.com";
+const APP_NAME = "Al-Ma'tsurat";
 const VERSION = "1.0.0";
+const DEV_NAME = "PT Sister Devop Fii Sabilillah";
+const DEV_EMAIL = "rianita72@gmail.com";
 
 export function AboutSection({ lang }: { lang: Lang }) {
   const [open, setOpen] = useState(false);
@@ -48,23 +49,29 @@ export function AboutSection({ lang }: { lang: Lang }) {
 
             <div className="mt-5 space-y-3 text-sm">
               <div className="flex items-center gap-3 text-foreground">
+                <Code2 className="h-4 w-4 text-muted-foreground shrink-0" />
+                <span className="text-muted-foreground">App:</span>
+                <span className="font-semibold">{APP_NAME}</span>
+              </div>
+              <div className="flex items-center gap-3 text-foreground">
+                <Code2 className="h-4 w-4 text-muted-foreground shrink-0" />
+                <span className="text-muted-foreground">{tr("aboutVersion", lang)}:</span>
+                <span className="font-mono font-semibold">{VERSION}</span>
+              </div>
+              <div className="flex items-center gap-3 text-foreground">
                 <User className="h-4 w-4 text-muted-foreground shrink-0" />
                 <span className="text-muted-foreground">{tr("aboutDev", lang)}:</span>
                 <span className="font-semibold">{DEV_NAME}</span>
               </div>
               <div className="flex items-center gap-3 text-foreground">
                 <Mail className="h-4 w-4 text-muted-foreground shrink-0" />
+                <span className="text-muted-foreground">{tr("aboutContact", lang)}:</span>
                 <a
                   href={`mailto:${DEV_EMAIL}`}
                   className="text-primary hover:underline"
                 >
                   {DEV_EMAIL}
                 </a>
-              </div>
-              <div className="flex items-center gap-3 text-foreground">
-                <Code2 className="h-4 w-4 text-muted-foreground shrink-0" />
-                <span className="text-muted-foreground">{tr("aboutVersion", lang)}:</span>
-                <span className="font-mono font-semibold">{VERSION}</span>
               </div>
             </div>
 

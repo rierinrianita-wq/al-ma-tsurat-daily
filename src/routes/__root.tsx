@@ -78,7 +78,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "theme-color", content: "#1a472a" },
       { name: "apple-mobile-web-app-capable", content: "yes" },
       { name: "apple-mobile-web-app-status-bar-style", content: "black-translucent" },
-      { name: "apple-mobile-web-app-title", content: "Al-Ma'tsurat" },
+      { name: "apple-mobile-web-app-title", content: "Al-Matsurat" },
       { property: "og:title", content: "Al-Ma'tsurat — Morning & Evening Dhikr" },
       { property: "og:description", content: "Hasan Al-Banna's Al-Ma'thurat — bilingual, beautiful, installable PWA." },
       { property: "og:type", content: "website" },

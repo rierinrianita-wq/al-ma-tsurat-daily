@@ -14,8 +14,12 @@ export const t = {
   progress: { id: "Kemajuan", en: "Progress" },
   language: { id: "Bahasa", en: "Language" },
   donateTitle: {
-    id: "Dukung pengembang",
-    en: "Support the developer",
+    id: "Dukung Kami",
+    en: "Support Us",
+  },
+  donateBtn: {
+    id: "Dukung Kami ☕",
+    en: "Support Us ☕",
   },
   donateBody: {
     id: "Aplikasi ini gratis. Dukung pengembangnya ☕",
@@ -29,9 +33,10 @@ export const t = {
   aboutTitle: { id: "Tentang", en: "About" },
   aboutDev: { id: "Pengembang", en: "Developer" },
   aboutVersion: { id: "Versi", en: "Version" },
+  aboutContact: { id: "Kontak", en: "Contact" },
   aboutDesc: {
-    id: "Aplikasi dzikir Al-Ma'tsurat Wazifah Sughra karya Imam Hasan Al-Banna. Dibuat untuk memudahkan umat muslim membaca dzikir pagi dan petang secara mobile.",
-    en: "Al-Ma'tsurat Wazifah Sughra dhikr app by Imam Hasan Al-Banna. Built to help Muslims read morning and evening remembrances on mobile.",
+    id: "Dikembangkan dengan ❤️ untuk umat Muslim Indonesia",
+    en: "Developed with ❤️ for the Muslim community",
   },
   close: { id: "Tutup", en: "Close" },
 } as const;
