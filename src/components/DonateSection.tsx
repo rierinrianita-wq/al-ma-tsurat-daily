@@ -1,13 +1,9 @@
 import { useState } from "react";
 import type { Lang } from "@/lib/i18n";
 import { tr } from "@/lib/i18n";
-import { Coffee, X } from "lucide-react";
+import { Coffee, X, Heart } from "lucide-react";
 
-const options = [
-  { name: "Dana", url: "https://link.dana.id/", color: "bg-[#118EEA] text-white" },
-  { name: "GoPay", url: "https://gopay.co.id/", color: "bg-[#00AED6] text-white" },
-  { name: "PayPal", url: "https://paypal.me/", color: "bg-[#003087] text-white" },
-];
+const SAWERIA_URL = "https://saweria.co/almatsuratdev";
 
 export function DonateSection({ lang }: { lang: Lang }) {
   const [open, setOpen] = useState(false);
@@ -47,18 +43,16 @@ export function DonateSection({ lang }: { lang: Lang }) {
               </button>
             </div>
 
-            <div className="mt-5 grid gap-2">
-              {options.map((o) => (
-                <a
-                  key={o.name}
-                  href={o.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={`block w-full rounded-xl py-3 text-center font-display font-semibold ${o.color} hover:opacity-95`}
-                >
-                  {o.name}
-                </a>
-              ))}
+            <div className="mt-5">
+              <a
+                href={SAWERIA_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="flex w-full items-center justify-center gap-2 rounded-xl bg-[#F9A825] text-[#1a1a2e] py-3 font-display font-semibold hover:opacity-95 transition-opacity"
+              >
+                <Heart className="h-5 w-5" />
+                Saweria
+              </a>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 // Al-Ma'tsurat service worker — production only.
 const CACHE = "matsurat-v1";
-const ASSETS = ["/", "/manifest.json", "/icon-192.svg", "/icon-512.svg"];
+const ASSETS = ["/", "/manifest.json", "/icon-192.svg", "/icon-512.svg", "/icon-192.png", "/icon-512.png"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS)).then(() => self.skipWaiting()));

@@ -6,6 +6,7 @@ import { DzikrCard } from "@/components/DzikrCard";
 import { SessionToggle } from "@/components/SessionToggle";
 import { LanguageToggle } from "@/components/LanguageToggle";
 import { DonateSection } from "@/components/DonateSection";
+import { AboutSection } from "@/components/AboutSection";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { PWARegister } from "@/components/PWARegister";
 import { useLocalStorage } from "@/hooks/use-local-storage";
@@ -16,7 +17,7 @@ export const Route = createFileRoute("/")({
     links: [
       { rel: "canonical", href: "/" },
       { rel: "manifest", href: "/manifest.json" },
-      { rel: "apple-touch-icon", href: "/icon-192.svg" },
+      { rel: "apple-touch-icon", href: "/icon-192.png" },
     ],
   }),
   component: Index,
@@ -144,6 +145,7 @@ function Index() {
       </main>
 
       <DonateSection lang={lang} />
+      <AboutSection lang={lang} />
     </div>
   );
 }
