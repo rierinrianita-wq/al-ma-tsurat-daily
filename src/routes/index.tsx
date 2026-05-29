@@ -68,9 +68,9 @@ function Index() {
         <div className="mx-auto max-w-2xl px-4 py-3 flex items-center justify-between">
           <div>
             <h1 className="font-display text-xl font-bold leading-none text-primary">
-              {tr("appName", lang)}
+              {tr("appName", lang)} <span className="font-normal text-muted-foreground">— {tr("subtitle", lang)}</span>
             </h1>
-            <p className="text-[11px] mt-1 text-muted-foreground">{tr("subtitle", lang)}</p>
+
           </div>
           <div className="flex items-center gap-2">
             <ThemeToggle />
