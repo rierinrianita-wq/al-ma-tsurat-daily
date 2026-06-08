@@ -105,7 +105,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@type": "WebSite",
           name: "Al-Ma'tsurat",
           description:
-            "Morning & Evening Dhikr Al-Ma'thurat collection. Bilingual Indonesian/English, installable PWA.",
+            "Morning & Evening Dhikr Al-Ma'thurat Collection. Bilingual Indonesian/English, installable PWA.",
         }),
       },
       {
