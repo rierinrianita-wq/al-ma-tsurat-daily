@@ -105,7 +105,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@type": "WebSite",
           name: "Al-Ma'tsurat",
           description:
-            "Morning & Evening Dhikr from Imam Hasan Al-Banna's Al-Ma'thurat collection. Bilingual Indonesian/English, installable PWA.",
+            "Morning & Evening Dhikr Al-Ma'thurat collection. Bilingual Indonesian/English, installable PWA.",
         }),
       },
       {
@@ -129,9 +129,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <HeadContent />
-        <link rel="icon" type="image/png" href="/logo-16.png" />
-        <link rel="apple-touch-icon" href="/logo-180.png" />
+        
       </head>
       <body>
         {children}
